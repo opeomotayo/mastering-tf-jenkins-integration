@@ -1,9 +1,8 @@
 pipeline{
  agent any
  environment {
-   PATH = "$(PATH):${def getTerraformPath()}"
+   PATH = "$(PATH):${getTerraformPath()}"
  }
-
  stages{
    stage('terraform init'){
      steps{
