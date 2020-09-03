@@ -7,7 +7,7 @@ pipeline{
    stage('S3 - create bucket'){
      steps{
        script{
-         getTerraformPath('ope-tf-bucket-0309')
+         createS3Bucket('ope-tf-bucket-0309')
        }
      }
    }
